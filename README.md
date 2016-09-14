@@ -1,5 +1,5 @@
 # camoBeer
 
-Application to get updated beer prices in my neighbourhood, Camobi.
+Application to get updated beer prices in my neighbourhood, Camobi, Santa Maria - RS, Brasil.
 
-Santa Maria - RS, Brasil.
+* Server: Django application
