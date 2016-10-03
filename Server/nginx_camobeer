@@ -1,16 +1,16 @@
 
 server {
     listen 80;
-    server_name rasp.dalmago.xyz;
+    server_name digoc.dalmago.xyz www.digoc.dalmago.xyz;
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        root /home/pi/camoBeer/Server/camobeer;
+        root /home/dalmago/camoBeer/Server/camobeer;
     }
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/pi/camoBeer/Server/camobeer.sock;
+        proxy_pass http://unix:/home/dalmago/camoBeer/Server/camobeer.sock;
     }
 
 }

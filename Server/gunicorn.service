@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn application server handling camoBeer
+After=network.target
+
+[Service]
+User=dalmago
+Group=www-data
+WorkingDirectory=/home/dalmago/camoBeer/Server/camobeer
+ExecStart=/home/dalmago/camoBeer/Server/venv/bin/gunicorn --workers 3 --bind unix:/home/dalmago/camoBeer/Server/camobeer.sock camobeer.wsgi:application
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

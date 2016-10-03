@@ -24,7 +24,6 @@ router.register(r'rest', views.BeerViewSet)
 urlpatterns = [
     # url(r'^$', include('teste.urls')),
     url(r'^', include(router.urls)),
-    url(r'^temp/', include('teste.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
